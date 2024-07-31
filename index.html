@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="matrix-background">
+        <canvas id="matrixCanvas"></canvas>
+    </div>
+    <div class="game-content">
+        <h1>======================</h1>
+        <h1>🐍    Snake Game     🐍</h1>
+        <h1>======================</h1>
+        <div class="game-info">
+            <div class="score-board">
+                <div class="score-box">
+                    <p>Puntaje: <span id="score">0</span></p>
+                </div>
+                <div class="level-box">
+                    <p>Nivel: <span id="level">1</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="game-container">
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+            <div id="gameOver" class="hidden">
+                <p>Perdiste</p>
+                <button id="restartButton">Reiniciar</button>
+                <button id="exitButton">Salir</button>
+            </div>
+        </div>
+       
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

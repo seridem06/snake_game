@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    position: relative;
+}
+
+.matrix-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#matrixCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.game-content {
+    position: relative;
+    z-index: 1;
+}
+
+.game-info {
+    margin-bottom: 10px;
+}
+
+.score-board {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 10px;
+}
+
+.score-box, .level-box {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.game-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+}
+
+canvas {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+#gameOver {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: hsl(0, 98%, 51%);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px; /* Tamaño de fuente más grande para el texto */
+}
+
+#gameOver p {
+    font-weight: bold; /* Negrita para el texto */
+    font-size: 36px; /* Tamaño de fuente más grande para el texto de "Perdiste" */
+    margin: 0;
+}
+
+button {
+    margin: 10px;
+    padding: 15px 30px; /* Aumentar el tamaño del botón */
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px; /* Tamaño de fuente más grande para el texto del botón */
+    font-weight: bold; /* Negrita para el texto */
+}
+
+button:hover {
+    background-color: hsl(101, 81%, 47%);
+}
